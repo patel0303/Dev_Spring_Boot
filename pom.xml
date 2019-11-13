@@ -35,12 +35,33 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!--Spring Boot Automatic Restart using Developer Tools with Maven  -->
+		<dependency>
+		     <groupId>org.springframework.boot</groupId>
+		     <artifactId>spring-boot-devtools</artifactId>
+		     <optional>true</optional>
+	</dependency> 
 		
 	<!-- Here i am going to add dependency  -->	
 	        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        
+       <!-- JPA Data (We are going to use Repositories, Entities, Hibernate, etc...) -->  
+        <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+ <!-- Use MySQL Connector-J -->
+<dependency>
+
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
+        
+        
+        
 
 	</dependencies>
 
