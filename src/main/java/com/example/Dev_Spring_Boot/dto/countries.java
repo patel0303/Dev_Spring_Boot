@@ -1,4 +1,4 @@
-package com.example.Dev_Spring_Boot.Models;
+package com.example.Dev_Spring_Boot.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
