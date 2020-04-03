@@ -1,4 +1,4 @@
-package dto;
+package com.example.Dev_Spring_Boot.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "customers")
-public class customers {
+public class Customers {
 	
 //	@GeneratedValue(strategy = GenerationType.IDENTITY)
 //	int id;

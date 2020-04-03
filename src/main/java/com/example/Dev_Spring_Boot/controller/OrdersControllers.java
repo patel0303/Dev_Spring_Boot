@@ -1,17 +1,19 @@
-package controller;
+package com.example.Dev_Spring_Boot.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.Sample;
+import com.example.Dev_Spring_Boot.dto.Sample;
+
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -19,6 +21,7 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping("/api/learning")
 public class OrdersControllers {
+
 	@ApiOperation("Return OrderList")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "success"),
 			@ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -46,7 +49,7 @@ public class OrdersControllers {
 			@ApiResponse(code = 404, message = "The resource you were trying to reach is not found") })
 	@PostMapping(value = "/getMyName")
 	public String getMyName() {
-		return "Kirti";
+		return  "Jayprakash";
 	}
 
 }

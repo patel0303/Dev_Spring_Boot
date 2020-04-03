@@ -1,4 +1,4 @@
-package config;
+package com.example.Dev_Spring_Boot.config;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -19,7 +19,7 @@ public class SwaggerConfig {
 	    public Docket productApi() {
 	        return new Docket(DocumentationType.SWAGGER_2)
 	        		 .select()
-	                 .apis(RequestHandlerSelectors.basePackage("controller"))
+	                 .apis(RequestHandlerSelectors.basePackage("com.example.Dev_Spring_Boot.controller"))
 	                 .paths(regex("/api/learning.*"))
 	                 .build()
 	                 .apiInfo(metaData());
